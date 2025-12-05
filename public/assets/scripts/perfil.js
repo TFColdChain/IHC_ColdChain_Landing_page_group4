@@ -111,7 +111,7 @@ function guardarCambiosPerfil() {
 function cerrarSesion() {
   mostrarConfirmacion("¿Seguro que deseas cerrar tu sesión actual?", function () {
     localStorage.removeItem(SESSION_KEY);
-    window.location.href = "ColdChain.html";
+    window.location.href = "index.html";
   });
 }
 
@@ -144,7 +144,7 @@ function confirmarEliminacionCuenta() {
   const originalOnclick = btn.onclick;
 
   btn.onclick = function () {
-    window.location.href = "ColdChain.html";
+    window.location.href = "index.html";
   };
 
   modal.style.display = "flex";
